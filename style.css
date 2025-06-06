@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.navbar {
+  position: fixed; /* si ay meel kaliya ugu xirnaato */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* si ay uga horeyso content-ka kale */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+.navbar ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  margin: 0 15px;
+  color: black;
+  font-weight: 500;
+  transition: border-bottom 0.2s ease;
+}
+
+.navbar a:hover {
+  border-bottom: 2px solid rebeccapurple;
+}
+
+/* logo  start*/
+.logo {
+  font-size: 20px;
+  color: black;
+}
+
+.logo span {
+  color: rgb(255, 0, 0);
+}
+/* logo  end*/
+
+.about-me {
+  margin-top: 120px;
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pragraph {
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+.pragraph h1 {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.image {
+  border-radius: 50%;
+  width: 400px;
+  height: 390px;
+  margin-right: 90px;
+  border: 3px solid rgb(133, 55, 190);
+}
+
+.btn {
+  width: 90px;
+  height: 30px;
+  background: #ee7417;
+  margin-top: 30px;
+  border-radius: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.btn:hover {
+  background: #ffdd6e;
+  color: rgb(10, 10, 10);
+  transform: scale(1.05);
+}
+/* skills */
+
+#skills {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#skills h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+  position: relative;
+}
+
+#skills h2::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background-color: #ff9900;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+#skills ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+#skills li {
+  background-color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+  color: #444;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#skills li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#skills li {
+  background-color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+  color: #444;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards;
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#skills li:nth-child(1) {
+  animation-delay: 0.1s;
+}
+#skills li:nth-child(2) {
+  animation-delay: 0.2s;
+}
+#skills li:nth-child(3) {
+  animation-delay: 0.3s;
+}
+#skills li:nth-child(4) {
+  animation-delay: 0.4s;
+}
+#skills li:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+/* end skills */
+
+/* social Media */
+
+.social-media {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-media a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #333;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-media a:hover {
+  transform: scale(1.2);
+}
+
+.social-media .facebook:hover {
+  color: #1877f2; /* Facebook Blue */
+}
+
+.social-media .github:hover {
+  color: #333; /* GitHub Black */
+}
+
+.social-media .instagram:hover {
+  color: #e4405f; /* Instagram Pink */
+}
+
+/* Footer */
+
+.footer {
+  background-color: #f9f9f9;
+  padding: 30px 20px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  margin-top: 60px;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.footer-social {
+  margin-top: 10px;
+}
+
+.footer-social a {
+  margin: 0 10px;
+  color: #555;
+  font-size: 22px;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #ff6600;
+}
