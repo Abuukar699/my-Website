@@ -260,3 +260,96 @@
 .footer-social a:hover {
   color: #ff6600;
 }
+
+/* responsive */
+/* Responsive styles */
+
+@media (max-width: 1024px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .pragraph {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .image {
+    margin-right: 0;
+    width: 300px;
+    height: 290px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .navbar a {
+    margin: 10px 0;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .pragraph h1 {
+    font-size: 24px;
+  }
+
+  #skills ul {
+    grid-template-columns: 1fr;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .image {
+    width: 250px;
+    height: 240px;
+  }
+
+  .pragraph h1 {
+    font-size: 20px;
+  }
+
+  .btn {
+    height: 40px;
+    font-size: 16px;
+  }
+
+  #skills h2 {
+    font-size: 1.5rem;
+  }
+
+  .social-media a {
+    font-size: 20px;
+  }
+
+  .footer p {
+    font-size: 14px;
+  }
+
+  .footer-social a {
+    font-size: 18px;
+  }
+}
